@@ -119,7 +119,7 @@
             {
                 if (allCorrect[x] == false)
                 {
-                    winGame = true;
+                    winGame = false;
                     break;
                 }
             }
