@@ -11,8 +11,8 @@
 
     var randomStartingLetter = Math.round(Math.random() * 26);
 
-    var randomWordIndex = Math.round(Math.random() * allWords[randomStartingLetter].length);
-    var randomWord = allWords[randomStartingLetter][randomWordIndex];
+    var randomWordIndex = Math.round(Math.random() * allGuessableWords[randomStartingLetter].length);
+    var randomWord = allGuessableWords[randomStartingLetter][randomWordIndex];
 
     if (randomWord === "undefined")
     {
@@ -20,7 +20,7 @@
         location.reload();
     }
         
-    alert(randomWord);
+    //alert(randomWord);
 
     window.onload = init;
 
@@ -59,11 +59,11 @@
             //Make the guess
 
             var wordIndex = currentGuess.charCodeAt(0) - 97;
-            var length = allWords[wordIndex].length;
+            var length = allGuessableWords[wordIndex].length;   //Changed for guessing
             var validWood = false;
             for (var x = 0; x < length; x++)
             {
-                if (currentGuess === allWords[wordIndex][x])
+                if (currentGuess === allGuessableWords[wordIndex][x])   //Changed for guessing
                 {
                     validWood = true;
                 }
