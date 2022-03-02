@@ -138,7 +138,7 @@
             {
                 //End the game.....
                 gameOver = true;
-                alertBox.innerHTML = "Game Over";
+                alertBox.innerHTML = "Word was: " + randomWord;
                 alertBox.style.opacity = "1";
             }
             //alert(currentRow);
