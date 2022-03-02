@@ -20,7 +20,7 @@
         location.reload();
     }
         
-    //alert(randomWord);
+    alert(randomWord);
 
     window.onload = init;
 
@@ -128,7 +128,8 @@
             {
                 gameOver = true;
                 alertBox.innerHTML = "You Win in " + (currentRow + 1) + "!";
-                alertBox.style.opacity = "1";
+                alertBox.style.opacity = "0.75";
+                return;
             }
 
             currentRow++;
@@ -138,8 +139,8 @@
             {
                 //End the game.....
                 gameOver = true;
-                alertBox.innerHTML = "Word was: " + randomWord;
-                alertBox.style.opacity = "1";
+                alertBox.innerHTML = "Word was: " + randomWord.toUpperCase();
+                alertBox.style.opacity = "0.75";
             }
             //alert(currentRow);
         }
