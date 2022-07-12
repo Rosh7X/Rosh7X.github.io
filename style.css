@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+}
+
+.pwords {
+    margin-top: -12.5%;
+}
+
+.center {
+    background-color: #5d5c75;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+.phrase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
