@@ -1,7 +1,7 @@
 (function(window, document, undefined){
 
     // code that should be taken care of right away
-    var countDownDate = new Date("Aug 21, 2022 00:00:00").getTime();
+    var countDownDate = new Date("Aug 22, 2022 00:00:00").getTime();
 
     const names = ["cutie", "babe", "beautiful", "erin"]
 
